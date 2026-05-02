@@ -1,0 +1,5 @@
+.workongoing
+.coefficient_cache_*
+*.tsv.bak
+__pycache__/
+*.pyc
