@@ -5,13 +5,12 @@ to fit a zenwebp/zenjpeg/zenavif/zenjxl picker (or analogous tuned head) is
 committed here as bytes — no runtime generation, no symlinks into other
 repos — so a checkout at any commit reproduces a specific oracle exactly.
 
-Held-out validation/test corpora are **deliberately excluded** so they
-remain untainted for codec-in-the-loop A/B testing. Specifically:
-
-- `~/work/codec-corpus/CID22/CID22-512/validation/` (41 imgs)
-- `~/work/codec-corpus/clic2025/final-test/` (30 imgs)
-- The 30 `clic2025-1024/*.png` variants whose basename matches a
-  final-test source.
+Held-out validation lives in a separate sibling tree (`mlp-validate/`)
+so the train/validate boundary is enforced at the filesystem level.
+**Training tools must refuse to load any path under `mlp-validate/`** —
+that's the contract of this repo. Codec-in-the-loop A/B harnesses do
+the inverse: they load only `mlp-validate/` and never touch
+`mlp-tune/`.
 
 ## Layout
 
@@ -27,11 +26,19 @@ mlp-tune/
 └── synthetic/            60  procedural (gradients/checker/noise/hue), CC0
                          ────
                          713 images, ~313 MB
+
+mlp-validate/
+├── cid22-val/            41  photos, 512×512, CC-BY-SA 4.0
+├── clic-final-test/      30  photos, native res, Unsplash
+└── clic-1024-final-test/ 30  photos, 1024×1024 Lanczos resamples of final-test, Unsplash
+                         ────
+                         101 images, ~177 MB
 ```
 
-`manifest.tsv` is the canonical index — sha256, group, content class,
-source label, license, file size, repo-relative path. Sorted by sha256
-for deterministic regeneration.
+`manifest.tsv` (training) and `validate-manifest.tsv` (held-out) are
+the canonical indexes — sha256, group, content class, source label,
+license, file size, repo-relative path. Both sorted by sha256 for
+deterministic regeneration.
 
 ## Conventions
 
