@@ -1,0 +1,113 @@
+
+[zenwebp_v01]
+
+=== zenwebp_v01 ===
+  (image, size_class) pairs: 1264
+  per size_class total: {'tiny': 316, 'small': 370, 'medium': 322, 'large': 256}
+  Hamming<= 0: clusters=813 kept=813 reduction=35.7%
+  Hamming<= 1: clusters=660 kept=660 reduction=47.8%
+  Hamming<= 2: clusters=544 kept=544 reduction=57.0%
+  primary threshold = 1, per size_class:
+    large: 256 -> 80  (69% drop)
+    medium: 322 -> 103  (68% drop)
+    small: 370 -> 186  (50% drop)
+    tiny: 316 -> 291  (8% drop)
+  largest clusters at H=1 (top 5):
+    size=113 sc=large sample=['097cb426910ba8ce2525dd8bb7fb1777.png', '1454613116.png', 'pexels-photo-3193731.png']
+    size=82 sc=small sample=['Boxplot.png', '7218572.png', '239581.png']
+    size=73 sc=medium sample=['239581.png', '1082342.png', '1661950.png']
+    size=72 sc=medium sample=['pexels-photo-1933873.png', '100f17892cf7bb12beb12479641fcc4c.png', '5e5ce43575fa67fdc0dd37146d7f479e.png']
+    size=43 sc=small sample=['flowers-lossless.png', '2127969.png', '1624307.png']
+  -> wrote /home/lilith/work/zentrain-corpus/mlp-tune-fast/zenwebp_v01_subset.tsv (660 rows)
+
+[zenwebp]
+
+=== zenwebp ===
+  (image, size_class) pairs: 828
+  per size_class total: {'small': 370, 'medium': 322, 'large': 38, 'tiny': 98}
+  Hamming<= 0: clusters=784 kept=784 reduction=5.3%
+  Hamming<= 1: clusters=783 kept=783 reduction=5.4%
+  Hamming<= 2: clusters=779 kept=779 reduction=5.9%
+  primary threshold = 1, per size_class:
+    large: 38 -> 38  (0% drop)
+    medium: 322 -> 301  (7% drop)
+    small: 370 -> 350  (5% drop)
+    tiny: 98 -> 94  (4% drop)
+  largest clusters at H=1 (top 5):
+    size=2 sc=small sample=['1129482.png', '1129482__sz64.png']
+    size=2 sc=small sample=['1624307__sz64.png', '1624307.png']
+    size=2 sc=small sample=['1943411.png', '1943411__sz64.png']
+    size=2 sc=small sample=['2062426.png', '2062426__sz64.png']
+    size=2 sc=small sample=['pexels-photo-6096399__sz64.png', 'pexels-photo-6096399.png']
+  -> wrote /home/lilith/work/zentrain-corpus/mlp-tune-fast/zenwebp_subset.tsv (783 rows)
+
+[zenjpeg]
+
+=== zenjpeg ===
+  (image, size_class) pairs: 1388
+  per size_class total: {'tiny': 347, 'small': 347, 'large': 347, 'medium': 347}
+  Hamming<= 0: clusters=675 kept=675 reduction=51.4%
+  Hamming<= 1: clusters=494 kept=494 reduction=64.4%
+  Hamming<= 2: clusters=325 kept=325 reduction=76.6%
+  primary threshold = 1, per size_class:
+    large: 347 -> 86  (75% drop)
+    medium: 347 -> 81  (77% drop)
+    small: 347 -> 59  (83% drop)
+    tiny: 347 -> 268  (23% drop)
+  largest clusters at H=1 (top 5):
+    size=76 sc=large sample=['3534924.png', 'b51d5fb537246482ef7a7ab63f093cab.png', '2c1f84548ef99faec2b4f9bf12227c83.png']
+    size=73 sc=medium sample=['aed95e005df28e790519eefb6eb1e565.png', 'f67f11de4ca9ebda3db52c41fd3d26c3105687b2d37571e54631a1e4486d0b30.png', '2471234.png']
+    size=72 sc=small sample=['2600340.png', '2775196.png', '7394483.png']
+    size=49 sc=small sample=['159741.png', 'pexels-photo-2846602.png', '870516c65d81fb9267de6865964083a9.png']
+    size=49 sc=medium sample=['Abstract-Art-1.png', 'pexels-photo-3680501.png', '1583339.png']
+  -> wrote /home/lilith/work/zentrain-corpus/mlp-tune-fast/zenjpeg_subset.tsv (494 rows)
+
+[zenavif]
+
+=== zenavif ===
+  (image, size_class) pairs: 448
+  per size_class total: {'small': 200, 'tiny': 55, 'medium': 166, 'large': 27}
+  Hamming<= 0: clusters=314 kept=314 reduction=29.9%
+  Hamming<= 1: clusters=211 kept=211 reduction=52.9%
+  Hamming<= 2: clusters=120 kept=120 reduction=73.2%
+  primary threshold = 1, per size_class:
+    large: 27 -> 15  (44% drop)
+    medium: 166 -> 66  (60% drop)
+    small: 200 -> 101  (50% drop)
+    tiny: 55 -> 29  (47% drop)
+  largest clusters at H=1 (top 5):
+    size=35 sc=small sample=['flowers-lossless.png', 'pexels-photo-6096399.png', 'pexels-photo-4672246.png']
+    size=26 sc=tiny sample=['I39.png', 'I06.png', 'I75.png']
+    size=20 sc=medium sample=['146083.png', '1001682.png', '100f17892cf7bb12beb12479641fcc4c.png']
+    size=11 sc=small sample=['1943411.png', '2a760bf1ccea6998be3890dcc2371b23f35fe3006562884b45bc534a621d5c12.png', '3836671.png']
+    size=11 sc=medium sample=['Beam-Space-Processing.png', '580612.png', '1459534.png']
+  -> wrote /home/lilith/work/zentrain-corpus/mlp-tune-fast/zenavif_subset.tsv (211 rows)
+
+[zenjxl]
+
+=== zenjxl ===
+  (image, size_class) pairs: 400
+  per size_class total: {'tiny': 100, 'small': 100, 'large': 100, 'medium': 100}
+  Hamming<= 0: clusters=380 kept=380 reduction=5.0%
+  Hamming<= 1: clusters=368 kept=368 reduction=8.0%
+  Hamming<= 2: clusters=360 kept=360 reduction=10.0%
+  primary threshold = 1, per size_class:
+    large: 100 -> 94  (6% drop)
+    medium: 100 -> 100  (0% drop)
+    small: 100 -> 100  (0% drop)
+    tiny: 100 -> 74  (26% drop)
+  largest clusters at H=1 (top 5):
+    size=26 sc=tiny sample=['sha:dd74f01130abed1a', 'sha:5162e90dc7ae0d8c', 'sha:e696c2db786db7bb']
+    size=6 sc=large sample=['sha:56e9e6c763f89b22', 'sha:f71b777b33f8a2b1', 'sha:65e923d93a3c9860']
+    size=2 sc=tiny sample=['sha:8a055f44c5799b97', 'sha:749a229cb5915a31']
+    size=2 sc=large sample=['sha:55b92efdce2a51e9', 'sha:19c10346e6fed9f7']
+    size=1 sc=tiny sample=['sha:7415e1c1c0f11ca5']
+  -> wrote /home/lilith/work/zentrain-corpus/mlp-tune-fast/zenjxl_subset.tsv (368 rows)
+
+=== Cross-codec union ===
+  union (image, size_class) pairs: 2056
+  total observed pairs across codecs: 3294
+  reduction vs total observed: 37.6%
+  unique source images in union: 972
+  -> wrote /home/lilith/work/zentrain-corpus/mlp-tune-fast/cross_codec_union.tsv
+  -> wrote /home/lilith/work/zentrain-corpus/mlp-tune-fast/per_image_reasons.tsv
