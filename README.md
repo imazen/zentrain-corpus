@@ -27,6 +27,9 @@ mlp-tune/
                          ────
                          713 images, ~313 MB
 
+mlp-tune-fast/            # behavioral-clustered subset of mlp-tune (587 imgs, ~246 MB)
+                          # for fast-iteration sweeps. See mlp-tune-fast/README.md.
+
 mlp-validate/
 ├── cid22-val/            41  photos, 512×512, CC-BY-SA 4.0
 ├── clic-final-test/      30  photos, native res, Unsplash
@@ -35,10 +38,10 @@ mlp-validate/
                          101 images, ~177 MB
 ```
 
-`manifest.tsv` (training) and `validate-manifest.tsv` (held-out) are
-the canonical indexes — sha256, group, content class, source label,
-license, file size, repo-relative path. Both sorted by sha256 for
-deterministic regeneration.
+`manifest.tsv` (training), `manifest-fast.tsv` (fast-iteration subset),
+and `validate-manifest.tsv` (held-out) are the canonical indexes —
+sha256, group, content class, source label, license, file size,
+repo-relative path. All sorted by sha256 for deterministic regeneration.
 
 ## Conventions
 
