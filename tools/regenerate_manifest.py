@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parent.parent
 # tree -> output manifest filename
 TREES = [
     ("mlp-tune", "manifest.tsv"),
+    ("mlp-tune-fast", "manifest-fast.tsv"),
     ("mlp-validate", "validate-manifest.tsv"),
 ]
 
